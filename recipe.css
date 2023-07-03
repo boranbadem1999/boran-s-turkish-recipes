@@ -1,0 +1,224 @@
+/*Navbar */
+
+.container-fluid {
+  background: linear-gradient(to top left, orangered, orange);
+  height: 13vh;
+}
+.navbar-brand {
+  font-family: 'Libre Baskerville', sans-serif;
+
+  font-weight: bold;
+  font-style: italic;
+}
+span {
+  font-family: 'Fasthand', sans-serif;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+}
+
+.dropdown-toggle {
+  background-color: black;
+
+  font-family: 'Fasthand', sans-serif;
+  font-size: 1.4rem !important;
+
+  font-weight: bolder;
+}
+.dropdown-toggle:hover {
+  background-color: black;
+  border-radius: 15px;
+  color: white !important;
+
+  transition: 0.15s ease-out;
+}
+.dropdown-item {
+  font-family: 'Shadows Into Light';
+  font-size: 1.5rem;
+  border: 5px solid orange !important;
+  border-radius: 18px !important;
+  background-color: black !important;
+  color: orangered !important;
+}
+.dropdown-item:hover {
+  background-color: whitesmoke !important;
+  color: orangered !important;
+}
+.dropdown-item:active {
+  color: black !important;
+}
+.form-control {
+  border: 5px solid black !important;
+}
+
+/* Rest */
+
+.img-thumbnail {
+  width: 20vw;
+  height: 20vh;
+  margin: 15px;
+  border: 5px solid rgb(215, 58, 1) !important;
+  transform: scale(1);
+}
+.img-thumbnail:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.card-text {
+  color: black;
+  font-family: 'Libre Baskerville';
+
+  font-size: 10px;
+  font-weight: bold;
+}
+.btn-primary {
+  margin-top: 1rem;
+}
+
+.section-news {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.card {
+  width: 10vw;
+  height: 10vh;
+  margin: 10px;
+
+  flex-direction: row;
+}
+
+.second-section-h1 {
+  font-family: 'Fasthand', sans-serif;
+  color: white;
+  margin-left: 20px;
+}
+
+p {
+  font-family: 'Shadows Into Light', cursive;
+  margin-left: 15px;
+  font-size: 22px;
+  color: white;
+  font-style: italic;
+}
+
+h2 {
+  font-family: 'Fasthand', sans-serif;
+  color: white;
+  margin-top: 4rem;
+}
+
+.container-2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 90vh;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 30px;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 8px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  overflow: hidden;
+}
+.panel h3 {
+  color: white;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s, ease-in 0.4s;
+}
+
+.active {
+  flex: 12;
+}
+
+#contact {
+  background: linear-gradient(to top left, orangered, orange);
+  color: black;
+  font-family: 'Libre Baskerville', sans-serif;
+  text-align: center;
+}
+.form-group {
+  font-family: 'Fasthand', sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#name,
+#surname,
+#email {
+  font-family: 'Fasthand', sans-serif;
+  color: whitesmoke;
+  border-radius: 15px;
+  border: 5px solid black;
+}
+
+#message {
+  font-family: 'Fasthand', sans-serif;
+  font-size: 1.2rem;
+  border: 5px solid black;
+  height: 25vh;
+  border-radius: 15px;
+}
+
+.submit-button {
+  font-size: 1.5rem;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 12px;
+  margin-top: 1rem;
+  font-family: 'Fasthand', Times, serif;
+  border: 2px solid orangered;
+}
+.submit-button:hover {
+  background-color: whitesmoke;
+  color: black;
+  transition: 0.15s;
+}
+.submit-button:active {
+  background-color: orangered;
+  color: black;
+  border: 5px solid black;
+}
+
+@media (max-width: 768px) {
+  .active {
+    flex: 6;
+  }
+  .panel {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .active {
+    flex: 2;
+  }
+  .panel {
+    height: 40vh;
+  }
+}
